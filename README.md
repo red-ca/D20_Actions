@@ -4,6 +4,8 @@ A tabletop-style dice layer for **inZOI**. Almost everything your Zoi does can t
 
 Current version: **Beta 0.9.32** (see [CHANGELOG](CHANGELOG.md)).
 
+**Download:** [CurseForge](https://www.curseforge.com/inzoi/script-mod/d20-actions-1680c648) | [Nexus Mods](https://www.nexusmods.com/inzoi/mods/1823)
+
 Cook, kiss, work out, do laundry, buy a lottery ticket, repair a dryer or set the mood with your spouse: the game rolls a d20, adds your Zoi's skills, needs, moods, traits and relationships, and compares the total with a difficulty. Failures can be funny (a pink load of laundry) or painful (a shocked Zoi, a fire), and natural 20s give real rewards.
 
 ## At a glance
@@ -34,7 +36,7 @@ Both 20% values can be changed in the settings, and per action or per category i
 
 ## Install and first run
 
-1. Install the mod the same way as other inZOI mods and load a save.
+1. Download the mod from [CurseForge](https://www.curseforge.com/inzoi/script-mod/d20-actions-1680c648) or [Nexus Mods](https://www.nexusmods.com/inzoi/mods/1823), install it like other inZOI mods and load a save.
 2. On the first start the mod writes its own config files to the folder below. This takes a short while.
    `Documents\inZOI\Mods\InGame\D20_Actions_1680C648\ui\d20_data\saved`
 3. Use the settings button on the roll widget to open the settings panel.
@@ -65,6 +67,6 @@ The mod's code is **not** published here. This repository holds the documentatio
 
 ## Credits and links
 
-Made by **redm**. Discord: http://discord.gg/NK3WPn6R7H. Ko-fi: https://ko-fi.com/redmods.
+Made by **redm**. CurseForge: https://www.curseforge.com/inzoi/script-mod/d20-actions-1680c648. Nexus Mods: https://www.nexusmods.com/inzoi/mods/1823. Discord: http://discord.gg/NK3WPn6R7H. Ko-fi: https://ko-fi.com/redmods.
 
 Released under the license in [LICENSE](LICENSE).
