@@ -5,13 +5,10 @@
 // the same place you would copy them by hand. D20 Actions rereads that folder every 20 seconds or so, so the pack applies
 // without a restart.
 //
-// Status: the save call is the one the D20 panel itself uses. This snippet has NOT been tested from a third-party mod yet, so
-// test it before you ship it.
-//
 // HOW THE TEXT MUST BE FORMATTED (read this first)
 //   * A pack is plain text. Each row is  key=value  on its OWN LINE, so every row below is one array item.
 //   * Build the text with  [ 'row 1', 'row 2', ... ].join('\n')  : one array item per row, joined with \n (a new line).
-//     Do not use backtick template strings (the game's UI engine may not support them) and do not split a row over two lines.
+//     Do not use backtick template strings, and do not split a row over two lines.
 //   * Inside a row, write text exactly as in the cfg files. Variants of one message are separated by ' || ' (space, two bars,
 //     space). Placeholders stay as written: {a} {t} ${m} {k}.
 //   * A single quote inside a row must be escaped in JS:  'It\'s fine'   (or wrap that row in double quotes).

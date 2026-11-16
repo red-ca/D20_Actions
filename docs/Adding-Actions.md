@@ -26,7 +26,7 @@ pattern.kiss.target=1
 Repeated `pattern.<cat>.match` lines in the same file are all kept.
 
 ## 3. Make a new category
-The action names, buff and skill in the example are placeholders. Use real ids.
+Replace the action names in the example with real interaction ids.
 
 A category is one kind of check. You need rows for the category, which actions it covers, its outcomes, and its modifiers, plus texts in a language file.
 ```

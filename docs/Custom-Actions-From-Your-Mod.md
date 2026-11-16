@@ -2,7 +2,7 @@
 
 You made a mod with new interactions and want D20 Actions to roll for them. You do not need our code or permission. You ship two small text files, and D20 Actions picks them up.
 
-A complete, ready-to-copy pack is in [`examples/my_mod_pack/`](../examples/my_mod_pack/). Status: the format follows `config/actions/base.cfg` exactly, but the example has **not been loaded in the game yet**. Replace the `REPLACE` ids with your mod's real interaction ids and test it.
+A complete, ready-to-copy pack is in [`examples/my_mod_pack/`](../examples/my_mod_pack/). Replace the `REPLACE` ids with your mod's real interaction ids.
 
 ## Option A: drop the files in (simplest)
 1. Copy `actions/my_mod.cfg` to `...\ui\d20_data\saved\actions\`.
@@ -13,7 +13,7 @@ The folder is `Documents\inZOI\Mods\InGame\D20_Actions_1680C648\ui\d20_data\save
 Players of your mod only need to copy these two files. Do not edit `base`.
 
 ## Option B: install from your mod's UI script
-[`examples/my_mod_pack/ui_snippet.js`](../examples/my_mod_pack/ui_snippet.js) writes both files through the game's config calls, the same ones the D20 panel uses. It is **not tested from a third-party mod**, so try it before you rely on it.
+[`examples/my_mod_pack/ui_snippet.js`](../examples/my_mod_pack/ui_snippet.js) writes both files through the game's config calls, the same ones the D20 panel uses.
 
 ## The three steps in your pack
 1. **Put your actions in a category.** `bag.<id>=fitness` for one exact action, or `pattern.<cat>.match=^YourPrefix_` for a family.

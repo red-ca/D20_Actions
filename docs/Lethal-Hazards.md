@@ -14,4 +14,4 @@ One global switch in the settings, **off by default**. It controls anything that
 | Partner "Set the Mood" fight (5%) | Never. | Possible. |
 | Punch | Never. | 3% on a natural 1, same relationship rule, and a 5% chance the punch is fatal. |
 
-Every chance is a row in `config/actions/base.cfg` (`die=`, `chance=`, `fireout=`, `gate=`). Set `chance=0` in a pack file to remove an outcome, for example `pool.kiss.fight=chance=0`. See [Outcomes and rewards](Outcomes-And-Rewards.md). The fire and burnout visuals are the game's own effects, and I did not verify what each looks like.
+Every chance is a row in `config/actions/base.cfg` (`die=`, `chance=`, `fireout=`, `gate=`). Set `chance=0` in a pack file to remove an outcome, for example `pool.kiss.fight=chance=0`. See [Outcomes and rewards](Outcomes-And-Rewards.md).
