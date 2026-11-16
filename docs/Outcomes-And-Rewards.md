@@ -20,13 +20,17 @@ One entry is picked by weight each time a roll fails. The shown message is the l
 | `chance` | Percent. Rolled first and replaces the normal pick. |
 | `gate` | Relationship conditions, all must hold: `nofamily`, `family`, `Friendship<=25`, `Romance<=25`, `Business>10` (values -100 to 100). |
 | `lethal=1` | Dangerous. Only runs when Lethal hazards is on. |
-| `die` | `LifeTrigger@percent` (ElectricShock, Fire, Explosion, Slipped, Heatstroke...). Lethal only. |
+| `lethalonly=1` | The outcome only exists when Lethal hazards is on (for example the punch). |
+| `kind` | `electric` or `water`: repair outcomes that fit only that kind of break. |
+| `report=1` | Raises a police report. |
+| `die` | `LifeTrigger@percent` (ElectricShock, Explosion, Slipped, Heatstroke, Poison, Overwork...). Only rolled when Lethal hazards is on. |
 | `obj` | Object effect `row@target|self@delay@saferow`. The 4th part is the harmless twin. |
 | `safefx` | Effects that run instead of the dangerous spawn when Lethal hazards is off (for example `dust1`). |
 | `fx` | Effects such as `bang`, `dirty`, `hysteria`. |
 | `cancelat` | Seconds the action keeps playing before the cancel. |
 | `react` / `animat` | Reaction of the other character (`react=fight`, `react=punch`). |
 | `fireout` | Seconds until a real fire is put out (0 = never). |
+| `fire` | Ignored in this version. |
 
 ## Rewards
 Extra prizes on a success.

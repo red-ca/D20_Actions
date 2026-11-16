@@ -6,13 +6,13 @@ Every action you do in game can now trigger a d20 roll. Pass, fail, natural 1 an
 
 ### Actions
 - 36 categories: art, chat, conflict, cooking, dance, dating, dining, etiquette, family, finance, fitness, games, gaming, housework, humor, kiss, laundry, logic, media, medicine, mood (spouse and partner), mourning, music, passion, performance, photo, programming, repair, romance, selfcare, shower, sink, spa, toilet, tv.
-- 152 named actions and 82 match rules cover the game's own interactions. Roll timing follows the action (start, end, or the end of a chain such as "Set the Mood").
+- 152 named action rows and 43 name-match rules cover the game's own interactions. Roll timing follows the action (start, end, or the end of a chain such as "Set the Mood").
 - 304 outcome entries, 38 rewards, and 1,549 text variants (3 or more per outcome).
 - Natural 1: always cancels the action and applies the penalty. Fail: 20% chance of cancel and penalty. Pass: 20% chance of a bonus. Natural 20: bonus every time. All chances can be changed per action and per category.
 - Relationship matters: strangers and low levels can trigger fights or police, family never does.
 
 ### Effects and buffs
-- 24 new buffs and effects, 14 modifiers and 58 buff scripts. Examples: Flow (body, mind, creative, stage, kitchen), Well Fed, Drained, Rapport, Awkward, Solace, Lovestruck, Cold Feet, Heat Stroke, Chill, Blessing, Hysteria, Filth, Fabuloso.
+- 24 new buffs and effects (plus 22 hidden carrier buffs that pay and charge money without cheat messages), 14 modifiers and 58 buff scripts. Examples: Flow (body, mind, creative, stage, kitchen), Well Fed, Drained, Rapport, Awkward, Solace, Lovestruck, Cold Feet, Heat Stroke, Chill, Blessing, Hysteria, Filth, Fabuloso.
 - 37 custom interactions (breaks, leaks, dust and more) that act on real objects.
 - Failures can break appliances, shock, flood, make you slip, cause heat stroke, a cold, dust, dirty clothes, or a fire.
 - Money gains and losses (lottery, scams, tips, fines, taxes) now use the game's own currency script. No cheat messages appear. The toast itemizes losses and taxes.

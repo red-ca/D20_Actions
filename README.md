@@ -10,7 +10,7 @@ Cook, kiss, work out, do laundry, buy a lottery ticket, repair a dryer or set th
 
 ## At a glance
 
-- **36 categories**, **152 named actions** and **82 match rules** cover the game's own interactions.
+- **36 categories**, **152 named action rows** (2 of them marked never-roll) and **43 name-match rules** cover the game's own interactions.
 - **304 failure outcomes**, **38 rewards**, and about **1,500 text variants** (three or more per outcome).
 - **24 new buffs and effects**, 14 modifiers, 37 custom interactions that act on real objects.
 - **Dynamic difficulty** that follows the Zoi's main emotion (hard limits 5 and 30).

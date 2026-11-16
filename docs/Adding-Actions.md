@@ -59,7 +59,7 @@ fishing.snapped=...
 Give every text key at least 3 variants separated by ` || `.
 
 ## Category fields
-`label` (name in settings), `check` (name on the roll widget), `dc`, `cooldown` (seconds), `bonus` (buff on a bonus), `passBuff` / `failBuff` (buff on every pass or fail, with `passBoth` / `failBoth=1` to give it to both characters), `passMins` / `failMins`, `passFx` / `failFx`, `passOn=crit` (only on a natural 20), `cancel=0`, `chain=N`, `tolerant=1`, `follow`, `finish`, `dyn=0`, `critFailMoney`, `critWinMoney`, `messChance`.
+`label` (name in settings), `check` (name on the roll widget), `dc`, `cooldown` (seconds), `bonus` (buff on a bonus), `passBuff` / `failBuff` (buff on every pass or fail, with `passBoth` / `failBoth=1` to give it to both characters), `passMins` / `failMins`, `passFx` / `failFx`, `passOn=crit` (only on a natural 20), `cancel=0`, `chain=N`, `tolerant=1`, `follow`, `finish`, `dyn=0`, `critFailMoney`, `critWinMoney`, `messChance`, `cleanAllChance` (housework), `repairAt` (repair), `followup` (pattern of the game's chained follow-up action), `wait` and `maxlen` (timing of long chains).
 
 ## Mood versions
 The game offers extra versions of some actions for a mood (for example `Object_Start_Dryer_Cringing_Lv1`). A name ending in `_<Word>_Lv<N>` for a word listed by `mood.<Word>=1` counts as the plain action. `mood.<Word>=0` removes a word.

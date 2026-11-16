@@ -13,22 +13,25 @@ When a monitored action starts (or ends, see Timing), the mod rolls a d20 and ad
 Toasts show on a natural 20, a natural 1 and an ordinary fail. A pass without a bonus is silent.
 
 ## Modifiers
-A category's `profile.*` rows decide what adds to or takes from the d20:
+The d20 gets one bonus from each group below. Every group is **floored at 0** (a bad mood or a disliked action never subtracts) and **capped**, so the biggest total bonus is +16.
 
-- **skill**: the Zoi's level in the skill adds up to +5.
-- **stats**: needs that help or hurt, each with a weight.
-- **pos / neg**: traits and characteristics that give +1 or -1.
-- **buffPos / buffNeg**: active buffs that give +1 or -1.
-- **rel**: relationship levels (partner actions only).
-- Mood and preference for the action also count. The roll widget lists each part, and hides parts that are zero.
-Every modifier group is floored at 0, so it can only help or stay neutral.
+| Group | How it is worked out | Max |
+|---|---|---|
+| Skill | The Zoi's level in the category's skill, divided by 2 (rounded down). | +3 |
+| Needs (`stats`) | For each listed need: its value / 20 times its weight, rounded. The results are added. | +2 |
+| Traits | +1 for each trait in `pos`, -1 for each in `neg`. | +2 |
+| Mood | Only a positive main emotion counts: +1, or +2 at emotion level 3. | +2 |
+| Preference | +2 when the Zoi likes the kind of action. A disliked one gives 0. | +2 |
+| Buffs | +1 for each buff in `buffPos`, -1 for each in `buffNeg`. | +2 |
+| Relationship | Partner actions only: from the relationship levels in `rel`. | +3 |
+
+The roll widget lists each part and hides the ones that are zero.
 
 ## Dynamic difficulty
 With it on (settings), the DC moves:
-- A stacked roll (modifier above `dyn.free`, default 6) raises the DC by `dyn.up` per point.
-- A weak roll lowers it by `dyn.down` per point, at most `dyn.downCap`.
-- The Zoi's main emotion moves it too: emotions in `dyn.good` lower the DC, emotions in `dyn.bad` raise it, scaled by `dyn.emo`, `dyn.per` and capped by `dyn.emoCap` levels.
-- The DC never goes below **5** or above **30**.
+- **Load:** a total modifier above `dyn.free` (default 6) raises the DC by `dyn.up` (1) per point. Below it, the DC drops by `dyn.down` (0.5) per point, by at most `dyn.downCap` (3).
+- **Emotion:** an emotion listed in `dyn.good` lowers the DC and one in `dyn.bad` raises it. The size is the emotion level (up to `dyn.emoCap`, 3) times `dyn.emo` (1.5) plus `dyn.per` (0.25) for every modifier group that is not zero, rounded.
+- The final DC never goes below **5** or above **30**.
 - `cat.<id>.dyn=0` turns it off for one category.
 
 ## Timing
